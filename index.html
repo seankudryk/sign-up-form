@@ -5,8 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css"/>
+    <link/>
     <script src="./script.js" defer></script>
+    <title>Sign-up Form</title>
 </head>
     <body>
+        <div id="main-container">
+            <div id="image-container">
+                    <img id="hero-image" src="https://plus.unsplash.com/premium_photo-1686090450479-370d5ddf4de1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="placeholder image"/>
+                    <div id="logo-container">
+                        <div id="logo-content-container">  
+                            <img id="logo-image" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" height="200px"/>
+                            <p id="logo-text">ODIN</p>
+                        </div>      
+                    </div>
+                    <div id="image-footer-container">
+                        <p>Photo by <a href="">Some Person</a> at <a href="">Some Link</a></p>
+                    </div>
+            </div>
+            <div id="content-container">
+                <div id="text-container">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                <div id="form-container">
+                    <p>Let's do this!</p>
+                    <form>
+                        <ul>
+                            <li>
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name"/>  
+                            </li>
+                            <li>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name"/> 
+                            </li>
+                            <li>
+                                <label for="email-address">Email</label>
+                                <input type="email" id="email-address" name="email-address"/>
+                            </li>
+                            <li>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" id="phone-number" name="phone-number"/>
+                            </li>
+                            <li>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password"/>
+                            </li>
+                            <li>
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" name="confirm-password"/>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div id="button-container">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
