@@ -15,6 +15,10 @@ body {
     width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 #logo-container {
     width: 800px;
     height: 300px;
@@ -74,4 +78,37 @@ body {
 
 #image-footer-container a:visited, #image-footer-container a:link {
     color: white;
+}
+
+#text-container {
+    box-sizing: border-box;
+    height: 33.3%;
+    background-color: rgb(248, 244, 240);
+    margin: 0;
+    width: 100vw;
+}
+#text-content-div {
+    max-width: 500px;
+    background-color: gray;
+}
+
+#form-container {
+    height: 33.3%;
+    box-shadow: 0px 3px 5px black;
+}
+
+form {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+}
+
+#button-container {
+    height: 33.3%;
+}
+
+ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
