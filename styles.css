@@ -17,6 +17,7 @@ body {
 
 p {
     margin: 0;
+    font-family: sans-serif;
 }
 
 #logo-container {
@@ -33,6 +34,10 @@ p {
     width: 100%;
     background-color: black;
     opacity: 0.75;
+}
+
+#content-container {
+    width: 100%;
 }
 
 #logo-content-container {
@@ -74,6 +79,7 @@ p {
     left: 0;
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
+    padding: 10px 0px;
 }
 
 #image-footer-container a:visited, #image-footer-container a:link {
@@ -85,30 +91,106 @@ p {
     height: 33.3%;
     background-color: rgb(248, 244, 240);
     margin: 0;
-    width: 100vw;
+    width: 100%;
 }
+
 #text-content-div {
-    max-width: 500px;
-    background-color: gray;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 75px;
+    top: 35%;
+    width: 70%;
+}
+
+#text-content-div p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(47, 26, 0);
+}
+
+#text-content-div p:first-child {
+    padding-bottom: 25px;
 }
 
 #form-container {
+    position: relative;
+    top: 5%;
+    box-sizing: border-box;
     height: 33.3%;
-    box-shadow: 0px 3px 5px black;
+    margin-left: 75px;
+    width: 70%;
+    /* box-shadow: 0px 3px 5px black; */
 }
 
-form {
+#form-container p {
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(47, 26, 0);
+}
+
+.form-row {
     display: flex;
-    width: 50%;
     flex-direction: row;
+    width: 70%;
+}
+
+li {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
+
+li:nth-child(odd) {
+    margin-left: 0;
 }
 
 #button-container {
     height: 33.3%;
+    background-color: rgb(248, 244, 240);
+}
+
+
+#button-content-container {
+    box-sizing: border-box;
+    position: relative;
+    top: 10%;
+    margin-left: 75px;
+}
+
+#button-content-container button {
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    background-color: rgb(194, 94, 0);
+    color: rgb(255, 238, 226);
+    font-weight: 100;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#button-content-container p {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 ul {
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+input {
+    width: 225px;
+    height: 30px
+}
+
+label {
+    font-family: sans-serif;
+    color: rgb(47, 26, 0);
+    font-weight: 600;
+    font-size: 15px;
 }
