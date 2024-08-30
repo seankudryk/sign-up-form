@@ -92,14 +92,19 @@ p {
     background-color: rgb(248, 244, 240);
     margin: 0;
     width: 100%;
+    box-shadow: 2px 2px 5px 0px rgb(104, 104, 104);
+    margin-bottom: 10px;
+    z-index: 3;
 }
 
 #text-content-div {
     box-sizing: border-box;
     position: relative;
     margin-left: 75px;
-    top: 35%;
+    top: 30%;
     width: 70%;
+    min-width: 250px;
+    
 }
 
 #text-content-div p {
@@ -113,13 +118,18 @@ p {
 }
 
 #form-container {
-    position: relative;
+    /* position: relative;
     top: 5%;
     box-sizing: border-box;
     height: 33.3%;
-    margin-left: 75px;
-    width: 70%;
-    /* box-shadow: 0px 3px 5px black; */
+    width: 70%; */
+    padding-left: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+    z-index: 2;
+    box-shadow: 2px 2px 3px 0px rgb(104, 104, 104);
+    margin-bottom: 5px;
 }
 
 #form-container p {
@@ -127,6 +137,7 @@ p {
     font-size: 30px;
     font-weight: bold;
     color: rgb(47, 26, 0);
+    
 }
 
 .form-row {
@@ -200,6 +211,10 @@ input:focus {
     border: 2px solid rgba(44, 44, 252, 0.718);
     box-shadow: 1px 1px 3px 0px gray;
     outline: none;
+}
+
+input:invalid {
+    border: 2px solid red;
 }
 
 label {
